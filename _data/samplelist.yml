@@ -1,0 +1,24 @@
+docs_list_title: ACME Documentation
+docs: #so serve para navegação definir lista
+  - title: About me
+    url: about.html
+    #dropdowns: 
+     # - title: About me
+      #  url: about.html
+      #- title: About me
+       # url: about.html
+
+  
+  - title: Projects
+    url: projetos.html
+
+  - title: Contact Me
+    url: contact.html
+
+
+
+  #- title: asfknasfnsa Me
+  # url: https://www.google.com 
+
+  #tem de ser um html q eu crie ou da net tipo link
+
