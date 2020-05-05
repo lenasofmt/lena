@@ -1,0 +1,10 @@
+imagens_list_title: imagens dos projetos
+imagens: #quero criar lista de projetos para depois ter titulo descriçao e imagem em vez de ter os projetos como posts (visto q nao da pra por so imagem como quero)
+  - title: projeto imagem1
+    image: /assets/img/img4.png
+
+  - title: Projecto 2
+    image: /assets/img/img1.jpg
+
+  - title: projeto 3
+    image: /assets/img/img3.jpg

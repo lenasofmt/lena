@@ -1,5 +1,5 @@
 ---
 permalink: /
-layout: home
+layout: comets
 ---
 

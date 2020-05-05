@@ -22,3 +22,9 @@ layout: page
     {%- endfor -%}
   </ul>
  {%- endif -%}
+
+ {%- for imagem in site.data.projetos.imagens-%}<!-- liquid,dar todos os items da pasta do site data etc-->
+    <img src="{{ site.baseurl }}{{ imagem.image }}"/><!--criar um link com o item url e o item title-->
+  {%- endfor -%}
+
+  
