@@ -1,0 +1,18 @@
+---
+layout: default
+---
+
+<strong> Comets</strong>
+
+<nav>
+	<ul>
+		{% for comet in site.comets %}
+		<li>
+			<a href="{{site.baseurl}}/comets/{{comet.slug}}">{{comet.title}}</a>
+			<p>{{comet.category}}</p>
+		</li>
+		{% endfor %}
+	</ul>
+</nav>
+
+{{content}}

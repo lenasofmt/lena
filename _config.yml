@@ -29,6 +29,11 @@ url: "" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: jekyllrb
 github_username:  jekyll
 
+collections:
+  comets:
+    output: true # every entry in the collection will be turned into a page that I can link to
+    permalink: /comets/:path/
+
 # Build settings
 theme: minima
 plugins:
