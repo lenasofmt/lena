@@ -3,7 +3,14 @@ layout: default
 ---
 
 <p>{{page.title}}</p>
-<a href="{{page.behance}}" title="Click to go to my behance">Link do behance</a>
+
+
+{%- for links in page.behance-%} 
+    {% if links %}
+        <a href="{{page.behance}}" title="Click to go to my behance">Link do behance</a>
+    {% endif %}
+{%- endfor -%}
+
 <img src="{{site.baseurl}}{{page.image}}"/> <!--page pagina onde estou (cada pagina dos comets) e os seus atributos-->
 
 
