@@ -2,17 +2,9 @@
 layout: default
 ---
 
-<strong> Comets</strong>
+<p>{{page.title}}</p>
+<a href="{{page.behance}}">Link do behance</a>
+<img src="{{site.baseurl}}{{page.image}}"/> <!--page pagina onde estou (cada pagina dos comets) e os seus atributos-->
 
-<nav>
-	<ul>
-		{% for comet in site.comets %}
-		<li>
-			<a href="{{site.baseurl}}/comets/{{comet.slug}}">{{comet.title}}</a>
-			<p>{{comet.category}}</p>
-		</li>
-		{% endfor %}
-	</ul>
-</nav>
 
 {{content}}

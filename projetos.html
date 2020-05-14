@@ -3,7 +3,7 @@ title: Projects
 layout: page
 ---
 
-{%- if site.posts.size > 0 -%}
+<!--{%- if site.posts.size > 0 -%}
   <h2 class="post-list-heading">{{ page.list_title | default: "Posts" }}</h2>
   <ul class="post-list">
     {%- for post in site.posts -%}
@@ -21,10 +21,13 @@ layout: page
       </li>
     {%- endfor -%}
   </ul>
- {%- endif -%}
+ {%- endif -%}-->
 
- {%- for imagem in site.data.projetos.imagens-%}<!-- liquid,dar todos os items da pasta do site data etc-->
-    <img src="{{ site.baseurl }}{{ imagem.image }}"/><!--criar um link com o item url e o item title-->
+ {%- for imagem in site.comets-%}<!-- liquid,dar todos os items da pasta do site data etc-->
+    <p class="tituloproj">{{imagem.title}}</p>
+    <p class="descricaoproj">{{imagem.descricao}}</p>
+     <!--criar um link com o item url e o item title consigo ter imagem como link-->
+    <a class="page-link" href="{{ site.baseurl }}/{{ imagem.link }}"><img src="{{ site.baseurl }}{{ imagem.image }}"/></a><br>
   {%- endfor -%}
 
   
