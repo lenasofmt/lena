@@ -3,29 +3,10 @@ title: Projects
 layout: page
 ---
 
-<!--{%- if site.posts.size > 0 -%}            NAO PRECISO DE USAR POSTS 
-  <h2 class="post-list-heading">{{ page.list_title | default: "Posts" }}</h2>
-  <ul class="post-list">
-    {%- for post in site.posts -%}
-      <li>
-        {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
-        <span class="post-meta">{{ post.date | date: date_format }}</span>
-        <h3>
-          <a class="post-link" href="{{ post.url | relative_url }}">
-            {{ post.title | escape }}
-          </a>
-        </h3>
-        {%- if site.show_excerpts -%}
-          {{ post.excerpt }}
-        {%- endif -%}
-      </li>
-    {%- endfor -%}
-  </ul>
- {%- endif -%}-->
 
  {%- for imagem in site.comets-%}<!-- liquid,dar todos os items da pasta do site data etc-->
-    <p class="tituloproj">{{imagem.title}}</p>
-    <p class="descricaoproj">{{imagem.descricao}}</p>
+    <p class="tituloproj">{{imagem.title}}</p><!-- vai buscar titulo que defini-->
+    <p class="descricaoproj">{{imagem.descricao}}</p><!-- vai buscar descricao do proj-->
      <!--criar um link com o item url e o item title consigo ter imagem como link-->
     <a class="page-link" href="{{ site.baseurl }}/{{ imagem.link }}" title="Click to go to this project"><img src="{{ site.baseurl }}{{ imagem.image }}"/></a><br>
   {%- endfor -%}
