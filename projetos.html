@@ -4,11 +4,11 @@ layout: page
 ---
 
 
- {%- for imagem in site.comets-%}<!-- liquid,dar todos os items da pasta do site data etc-->
+{%- for imagem in site.comets-%}<!-- liquid,dar todos os items da pasta do site data etc-->
     <p class="tituloproj">{{imagem.title}}</p><!-- vai buscar titulo que defini-->
     <p class="descricaoproj">{{imagem.descricao}}</p><!-- vai buscar descricao do proj-->
      <!--criar um link com o item url e o item title consigo ter imagem como link-->
     <a class="page-link" href="{{ site.baseurl }}/{{ imagem.link }}" title="Click to go to this project"><img src="{{ site.baseurl }}{{ imagem.image }}"/></a><br>
-  {%- endfor -%}
+{%- endfor -%}
 
   

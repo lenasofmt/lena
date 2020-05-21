@@ -10,7 +10,7 @@ docs: #so serve para navegação definir lista
 
   
   - title: Projects
-    url: projetos.html
+    url: projetos.html #como no site do jekyll que usam project.html
 
   - title: Contact Me
     url: contact.html
