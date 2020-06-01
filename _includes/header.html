@@ -1,6 +1,6 @@
 <header class="site-header" role="banner">
 
-  <div class="wrapper">
+  <div class="wrappernav">
     {%- assign default_paths = site.pages | map: "path" -%}
     {%- assign page_paths = site.header_pages | default: default_paths -%}
     <a class="site-title" rel="author" href="{{ "/" | relative_url }}">{{ site.title | escape }}</a>
@@ -17,12 +17,14 @@
         </label>
 
         <div class="trigger">
-          {%- for item in site.data.samplelist.docs-%} <!-- liquid,dar todos os items da pasta do site data etc-->
-            <a class="page-link" href="{{ site.baseurl }}/{{ item.url }}" title="Click to go to this page">{{ item.title }}</a> <!--criar um link com o item url e o item title-->
-             <!--{%- for dropdowns in item.dropdowns-%}  liquid,dar todos os items da pasta do site data etc-->
-              <!--<a class="page-link" href="{{ dropdowns.url }}">{{ dropdowns.title }}</a> criar um link com o item url e o item title-->
-            <!--{%- endfor -%}-->
-          {%- endfor -%}
+          <div class="linksabertos">
+            {%- for item in site.data.samplelist.docs-%} <!-- liquid,dar todos os items da pasta do site data etc-->
+              <a class="page-link" href="{{ site.baseurl }}/{{ item.url }}" title="Click to go to this page">{{ item.title }}</a> <!--criar um link com o item url e o item title-->
+              <!--{%- for dropdowns in item.dropdowns-%}  liquid,dar todos os items da pasta do site data etc-->
+                <!--<a class="page-link" href="{{ dropdowns.url }}">{{ dropdowns.title }}</a> criar um link com o item url e o item title-->
+              <!--{%- endfor -%}-->
+            {%- endfor -%}
+          </div>
         </div>
       </nav>
     {%- endif -%}
