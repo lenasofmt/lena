@@ -4,6 +4,8 @@
  .site-header {
     padding-right: 30px;
     padding-left: 30px;
+    margin-right: auto;
+    margin-left: auto;
     border-bottom: 1px solid $grey-color-light;
     width: 100vw;
     min-height: $spacing-unit * 1.865;
@@ -121,6 +123,7 @@
         position: fixed;
         float: right;
         line-height: $base-line-height * 20 * 2.25;
+        width: 100vw;
 
         .nav-trigger {
             display: none;
@@ -140,23 +143,25 @@
         }
         
         .linksabertos {
-          position: absolute;
+          position: relative;
           margin-top: 0;
+          margin-right: auto;
+          margin-left: auto;
           display: flex;
-          align-items: flex-end;
           justify-content: flex-end;
           z-index: 0;
           background-color: transparent;
-          padding-left: 0;
-          margin-left: -70px;        
           border-bottom: none;  
       }
-     
+      .linksabertos a{
+        color: black;
+      }
         .page-link {
           color: $brand-color;
           margin-top: 15px;
           font-size: 20px;
           padding:0;
+          margin-right: 15%;
        
           &:not(:last-child) {
           margin-right: 30px;

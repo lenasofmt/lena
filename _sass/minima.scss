@@ -27,7 +27,7 @@ $on-palm:          600px !default;
 $on-laptop:        800px !default;
 
 
-//mobile first aqui ------------------------------------------------------------------
+//mobile first aqui (320px) ate os 600px------------------------------------------------------------------
 .introuis {
   font-size: 70px;
   font-weight: 800;
@@ -254,8 +254,8 @@ form label {
   .site-header {
     border-bottom: 1px solid $grey-color-light;
     min-height: $spacing-unit * 1.865;
-    background-color: blue;
     position: fixed;
+ 
   }
 
   .site-title {
@@ -263,7 +263,7 @@ form label {
     line-height: $base-line-height * $base-font-size * 2.25;
     letter-spacing: -1px;
     margin-bottom: 0;
-    float: left;
+    margin-left: 5%;
 
     &,
     &:visited {
@@ -296,7 +296,95 @@ form label {
   .introuis {
     font-size: 115px;
   }
+
+  //contacto
+  
+ 
+  .botao{
+    font-size: 16px;
+    margin-top: 20px;
+  }
+
+  .input1, .input2, .input3 {
+    width: 50%;
+  }
+  
+  .input3 {
+    height:80px;
+  }
 }
+
+
+@media screen and (min-width: 800px) {//para maior q 800px --------------
+  .site-title {
+    margin-left: 5%;
+  }
+  
+}
+
+@media screen and (min-width: 1000px) {//para maior q 1000px --------------
+  .sobresec {
+    margin: auto;
+    width: 100%;
+    
+  }
+  .sobre img, .contacto img  {
+    width: 100%;
+  }
+  
+  .todosproj {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .todosproj > div{
+      width: 50%;
+      padding: 0 10px 10px 0;
+      box-sizing: border-box;
+  }
+  .todosproj > div  img {
+    max-width: 100%; 
+    max-height: 100%;
+  }
+
+  //proj 1
+
+  .projeto1 {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0;
+    margin:0;
+  }
+
+  .projeto1 p {
+    display: inline;
+  }
+  .imga1 img {
+    width: 24%;
+    padding: 0;
+    margin:0;
+  }
+  
+  .cartazes img{
+    width: 33%;
+  }
+
+  .apresen img {
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 49.8%;
+    padding: 0;
+    margin: 0;
+  }
+}
+
+
+
+
+
+
+
+
 
 
 
