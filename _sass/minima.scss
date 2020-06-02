@@ -27,7 +27,7 @@ $on-palm:          600px !default;
 $on-laptop:        800px !default;
 
 
-//mobile first aqui
+//mobile first aqui ------------------------------------------------------------------
 .introuis {
   font-size: 70px;
   font-weight: 800;
@@ -74,8 +74,9 @@ $on-laptop:        800px !default;
 
 
 .titulopagproj {//titulos das paginas dentro de cada proj
-  font-size: 55px;
+  font-size: 45px;
   font-weight: 800;
+  line-height: 1.2;
 }
 
 .tituloproj {//titulos de cada projeto
@@ -206,8 +207,9 @@ label {
   color:rgb(54, 52, 52);
 }
 
-.introproj1 {
+.projeto1 p, .projeto2 p, .projeto3 p, .projeto4 p, .projeto5 p, .projeto6 p, .projeto7 p, .projeto8 p {
   margin-top: 40px;
+  margin-bottom: 40px;
 }
 
 .img1proj1 {
@@ -219,9 +221,15 @@ label {
   width: 100vw;
 }
 
+.cartazes img{
+  margin-bottom: 20px;
+}
 
+//fim do projeto 1
 
-
+.projeto5 img{
+  margin-bottom: 20px;
+}
 
 
 
@@ -236,7 +244,7 @@ label {
 //   }
 // }
 
-@media screen and (min-width: $on-palm) { //para maior q 600px
+@media screen and (min-width: $on-palm) { //para maior q 600px ---------------------------
   
   .site-header {
     border-bottom: 1px solid $grey-color-light;
