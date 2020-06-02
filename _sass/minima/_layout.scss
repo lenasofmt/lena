@@ -11,11 +11,13 @@
     background-color: $background-color;
     // Positioning context for the mobile navigation icon
     position: fixed;
+    
 
   }
   
   .site-title {
     @include relative-font-size(1.625);
+    position: absolute;
     font-weight: 300;
     line-height: $base-line-height * $base-font-size * 2.25;
     letter-spacing: -1px;
@@ -32,6 +34,7 @@
   .site-nav {
     float: right;
     position: fixed;
+    
     //line-height: $base-line-height * $base-font-size * 2.25;
 
 
@@ -104,27 +107,12 @@
 
     }
   
-    /*.page-link {
-      color: $text-color;
-      line-height: $base-line-height;
   
-      // Gaps between nav items, but not on the last one
-      &:not(:last-child) {
-        margin-right: 20px;
-      }
-    }*/
   
-    @include media-query($on-palm) {
+    @include media-query($on-palm) { //para maior q 600px
         position: fixed;
-        top: 9px;
-        right: $spacing-unit / 2;
-        background-color: blue;
-        border: 1px solid $grey-color-light;
-        border-radius: 5px;
-        text-align: right;
-    
         float: right;
-        line-height: $base-line-height * $base-font-size * 2.25;
+        line-height: $base-line-height * 20 * 2.25;
 
         .nav-trigger {
             display: none;
@@ -133,25 +121,41 @@
         .menu-icon {
             display: none;
         }
-        .page-link {
-            color: $text-color;
-            line-height: $base-line-height;
-
-            // Gaps between nav items, but not on the last one
-            &:not(:last-child) {
-            margin-right: 20px;
-            }
-        }
-    
-       
-        input ~ .trigger {
-            clear: both;
+        
+        label[for="nav-trigger"] {
             display: none;
         }
-    
-        input:checked ~ .trigger {
-            display: block;
+
+        input ~ .trigger {
+            display: inline;
+            
         }
+        
+        .linksabertos {
+          position: absolute;
+          margin-top: 0;
+          display: flex;
+          align-items: flex-end;
+          justify-content: flex-end;
+          z-index: 0;
+          background-color: transparent;
+          padding-left: 0;
+          margin-left: -70px;        
+          border-bottom: none;  
+      }
+     
+        .page-link {
+          color: $brand-color;
+          margin-top: 15px;
+          font-size: 20px;
+          padding:0;
+       
+          &:not(:last-child) {
+          margin-right: 30px;
+          }
+  
+      }
+     
     
         
     }
@@ -164,6 +168,7 @@
    * Site footer
    */
   .site-footer {
+    
     border-top: 1px solid $grey-color-light;
     padding: $spacing-unit 0;
   }

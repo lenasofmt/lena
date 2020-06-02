@@ -49,6 +49,7 @@ $on-laptop:        800px !default;
   font-weight: 800;
   margin-top: 40px;
   line-height: $base-line-height;
+  
 }
 
 .experience h4{
@@ -62,6 +63,15 @@ $on-laptop:        800px !default;
   line-height: $base-line-height;
 }
 
+.sobre p {
+  font-family: 'Lato', sans-serif;
+}
+
+.experience li, p, h4, a{
+  font-family: 'Lato', sans-serif;
+}
+
+
 
 .titulopagproj {//titulos das paginas dentro de cada proj
   font-size: 55px;
@@ -70,7 +80,7 @@ $on-laptop:        800px !default;
 
 .tituloproj {//titulos de cada projeto
   font-size: 45px;
-  font-weight: 700;
+  font-weight: 800;
   line-height: 1.2;
   margin-top: 20px;
   color: $brand-color;
@@ -95,6 +105,9 @@ $on-laptop:        800px !default;
 }
 
 //contacto
+.contacto {
+  font-family: 'Lato', sans-serif;
+}
 
 .contacto h1 {
   font-size: 45px;
@@ -138,11 +151,28 @@ $on-laptop:        800px !default;
   width: 90%;
   border-radius: 10px;
   color: $brand-color;
+  font-family: 'Lato', sans-serif;
 }
 
 .input3 {
   height:80px;
 }
+
+
+::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  font-family: 'Lato', sans-serif;
+}
+::-moz-placeholder { /* Firefox 19+ */
+  font-family: 'Lato', sans-serif;
+}
+:-ms-input-placeholder { /* IE 10+ */
+  font-family: 'Lato', sans-serif;
+}
+:-moz-placeholder { /* Firefox 18- */
+  font-family: 'Lato', sans-serif;
+}
+
+
 
 label {
   color: $brand-color;
@@ -150,6 +180,7 @@ label {
 }
 
 .botao{
+  font-family: 'Lato', sans-serif;
   border-bottom: 2px solid $brand-color;
   background-color: $brand-color;
   border: none;
