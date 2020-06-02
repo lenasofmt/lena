@@ -88,6 +88,7 @@ $on-laptop:        800px !default;
 }
 
 .descricaoproj {
+  font-family: 'Lato', sans-serif;
   font-size: 20px;
   line-height: $base-line-height;
   margin-bottom: 60px;
@@ -145,6 +146,7 @@ $on-laptop:        800px !default;
 
 label {
   color: $brand-color;
+  font-family: 'Lato', sans-serif;
 }
 
 .botao{
@@ -164,6 +166,28 @@ label {
 }
 
 //fim contacto
+
+
+//projeto 1
+
+.projeto1 {
+  font-family: 'Lato', sans-serif;
+  color:rgb(54, 52, 52);
+}
+
+.introproj1 {
+  margin-top: 40px;
+}
+
+.img1proj1 {
+  margin-top: 40px;
+  width: 100vw;
+}
+
+.projeto1 img{
+  width: 100vw;
+}
+
 
 
 
