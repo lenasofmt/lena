@@ -11,7 +11,7 @@
     background-color: $background-color;
     // Positioning context for the mobile navigation icon
     position: fixed;
-    
+    box-shadow: 0px 4px 24px rgba(#000, 0.10);
 
   }
   
@@ -27,13 +27,15 @@
 
     &,
     &:visited {
-      color: $grey-color-dark;
+      font-weight: 400;
+      color: $brand-color;
     }
   }
   
   .site-nav {
     float: right;
     position: fixed;
+    
     
     //line-height: $base-line-height * $base-font-size * 2.25;
 
@@ -51,16 +53,17 @@
         text-align: center;
         position: fixed;
         > svg {
-        fill: $grey-color-dark;
+        fill: $background-color;
         } 
     }
 
     label[for="nav-trigger"] {
         position: fixed;
         border: 1px solid $grey-color-light;
-        border-radius: 5px;
+        border-radius: 30%;
         right: $spacing-unit / 2;
         display: block;
+        box-shadow: 0px 4px 24px rgba(#000, 0.20);
         float: left;
         width: 36px;
         height: 26px;
@@ -69,6 +72,8 @@
         text-align: left;
         padding-top:10px;
         margin-top: 9px;
+        background-color: rgba($brand-color, 0.8);
+      
     }
 
     input ~ .trigger {
@@ -86,8 +91,8 @@
        
     }
     .linksabertos {
-        background-color: $background-color;
-        border-bottom: 1px solid $grey-color-light;
+        background-color: $brand-color;
+        border-bottom: 1px solid $brand-color;
         margin-top: 50px;
         margin-left: -30px;
         width:100vw;
@@ -95,6 +100,9 @@
         display: flex;
         justify-content: flex-start;
         
+    }
+    .linksabertos a{
+      color: $background-color;
     }
 
     .page-link {

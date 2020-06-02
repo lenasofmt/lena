@@ -175,10 +175,15 @@ $on-laptop:        800px !default;
 
 
 
-label {
+form label {
   color: $brand-color;
   font-family: 'Lato', sans-serif;
 }
+
+.formulario input {
+  margin-bottom: 10px;
+}
+
 
 .botao{
   font-family: 'Lato', sans-serif;
