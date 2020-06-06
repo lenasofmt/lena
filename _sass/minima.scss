@@ -42,16 +42,23 @@ $on-laptop:        800px !default;
 }*/
 
 
+.homy {
+  height: 100vh;
+}
 
 .introuis {
   font-size: 60px;
   font-weight: 800;
   line-height: 1.2;
+  color: white;
+  padding-top: 40px;
 }
 
 .imgindex {
   width: 100vw;
 }
+
+
 
 .introducao h2 {
   font-size: 35px;
@@ -283,10 +290,17 @@ form label {
   margin-bottom: 20px;
 }
 
-
-
-
-
+.wow {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: -1;
+}
 
 // Use media queries like this:
 // @include media-query($on-palm) {
@@ -425,6 +439,10 @@ form label {
 }
 
 @media screen and (min-width: 1000px) {//para maior q 1000px --------------
+  
+  .introuis {
+    padding-top: 100px;
+  }
   .sobresec {
     margin: auto;
     width: 100%;
@@ -491,6 +509,12 @@ form label {
     justify-content: center;
     width: 49%;
   }
+
+  
+
+
+
+
 }
 
 
