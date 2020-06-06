@@ -2,7 +2,7 @@
 
 // Define defaults for each variable.
 
-$base-font-family: "Montserrat" !default;
+$base-font-family: "Poppins" !default;
 $base-font-size:   16px !default;
 $base-font-weight: 400 !default;
 $small-font-size:  $base-font-size * 0.875 !default;
@@ -12,7 +12,7 @@ $spacing-unit:     30px !default;
 
 $text-color:       #111 !default;
 $background-color: #fdfdfd !default;
-$brand-color:      #6046d1 !default;
+$brand-color:      #fe53bb !default;
 
 $grey-color:       #828282 !default;
 $grey-color-light: lighten($grey-color, 40%) !default;
@@ -28,8 +28,23 @@ $on-laptop:        800px !default;
 
 
 //mobile first aqui (320px) ate os 600px------------------------------------------------------------------
+.site-header {
+  font-weight: 600;
+}
+
+/*
+.page-link:nth-child(2) {
+  background: #41fa70;
+}
+
+.page-link:nth-child(3) {
+  background: #f9ed6a;
+}*/
+
+
+
 .introuis {
-  font-size: 70px;
+  font-size: 60px;
   font-weight: 800;
   line-height: 1.2;
 }
@@ -64,23 +79,33 @@ $on-laptop:        800px !default;
 }
 
 .sobre p {
-  font-family: 'Lato', sans-serif;
+  //font-family: 'Lato', sans-serif;
+  font-family: 'Poppins', sans-serif;
 }
 
 .experience li, p, h4, a{
-  font-family: 'Lato', sans-serif;
+  //font-family: 'Lato', sans-serif;
+  font-family: 'Poppins', sans-serif;
 }
 
 
 
 .titulopagproj {//titulos das paginas dentro de cada proj
-  font-size: 45px;
+  font-size: 40px;
   font-weight: 800;
   line-height: 1.2;
 }
 
+.page-link img{
+  width: 100%;
+}
+
+.cometas img {
+  width: 100%;
+}
+
 .tituloproj {//titulos de cada projeto
-  font-size: 45px;
+  font-size: 40px;
   font-weight: 800;
   line-height: 1.2;
   margin-top: 20px;
@@ -99,7 +124,8 @@ $on-laptop:        800px !default;
 }
 
 .descricaoproj {
-  font-family: 'Lato', sans-serif;
+  //font-family: 'Lato', sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-size: 20px;
   line-height: $base-line-height;
   margin-bottom: 60px;
@@ -107,12 +133,14 @@ $on-laptop:        800px !default;
 
 //contacto
 .contacto {
-  font-family: 'Lato', sans-serif;
+  font-family: 'Poppins', sans-serif;
+  
+  //font-family: 'Lato', sans-serif;
 }
 
 .contacto h1 {
-  font-size: 45px;
-  font-weight: 700;
+  font-size: 36px;
+  font-weight: 800;
   line-height: 1.2;
   margin-top: 40px;
 }
@@ -136,10 +164,12 @@ $on-laptop:        800px !default;
 .iconsinfo {
   margin-top: 50px;
   display: flex;
+  font-size: 14px;
 }
 
 .icons img {
   width: 24px;
+  
 }
 .formulario {
   margin-top: 40px;
@@ -152,7 +182,8 @@ $on-laptop:        800px !default;
   width: 90%;
   border-radius: 10px;
   color: $brand-color;
-  font-family: 'Lato', sans-serif;
+  //font-family: 'Lato', sans-serif;
+  font-family: 'Poppins', sans-serif;
 }
 
 .input3 {
@@ -161,23 +192,28 @@ $on-laptop:        800px !default;
 
 
 ::-webkit-input-placeholder { /* Chrome/Opera/Safari */
-  font-family: 'Lato', sans-serif;
+  //font-family: 'Lato', sans-serif;
+  font-family: 'Poppins', sans-serif;
 }
 ::-moz-placeholder { /* Firefox 19+ */
-  font-family: 'Lato', sans-serif;
+  //font-family: 'Lato', sans-serif;
+  font-family: 'Poppins', sans-serif;
 }
 :-ms-input-placeholder { /* IE 10+ */
-  font-family: 'Lato', sans-serif;
+ // font-family: 'Lato', sans-serif;
+  font-family: 'Poppins', sans-serif;
 }
 :-moz-placeholder { /* Firefox 18- */
-  font-family: 'Lato', sans-serif;
+ // font-family: 'Lato', sans-serif;
+  font-family: 'Poppins', sans-serif;
 }
 
 
 
 form label {
   color: $brand-color;
-  font-family: 'Lato', sans-serif;
+  //font-family: 'Lato', sans-serif;
+  font-family: 'Poppins', sans-serif;
 }
 
 .formulario input {
@@ -186,7 +222,8 @@ form label {
 
 
 .botao{
-  font-family: 'Lato', sans-serif;
+  //font-family: 'Lato', sans-serif;
+  font-family: 'Poppins', sans-serif;
   border-bottom: 2px solid $brand-color;
   background-color: $brand-color;
   border: none;
@@ -208,7 +245,8 @@ form label {
 //projeto 1
 
 .projeto1 {
-  font-family: 'Lato', sans-serif;
+  //font-family: 'Lato', sans-serif;
+  font-family: 'Poppins', sans-serif;
   color:rgb(54, 52, 52);
 }
 
@@ -228,6 +266,15 @@ form label {
 
 .cartazes img{
   margin-bottom: 20px;
+}
+
+.video1 {
+  width: 100%;
+  margin-top: 20px;
+  height: auto;
+  object-fit: cover;
+  width: 100%;
+  height: 300px;
 }
 
 //fim do projeto 1
@@ -297,6 +344,7 @@ form label {
     font-size: 115px;
   }
 
+
   //contacto
   
  
@@ -319,7 +367,61 @@ form label {
   .site-title {
     margin-left: 5%;
   }
+
+  //proj 1
   
+  .projeto1 {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0;
+    margin:0;
+  }
+
+  .projeto1 p {
+    display: inline;
+    margin: 15px;
+  }
+  .imga1 img {
+    width: 24%;
+    padding: 0;
+    margin:0;
+  }
+  
+  .cartazes img{
+    width: 49%;
+  }
+
+  .apresen img {
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 49%;
+    padding: 0;
+    margin: 0;
+  }
+  //fim proj1
+  
+
+    
+  .projeto2 img{
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+  }
+  .coimbra img{
+    width: 49%;
+  }
+  
+
+  .projeto5 img {
+    width: 100%;
+  }
+
+  .projeto8 img {
+    width: 100%;
+  }
+
+
+
 }
 
 @media screen and (min-width: 1000px) {//para maior q 1000px --------------
@@ -336,15 +438,18 @@ form label {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    
   }
+
   .todosproj > div{
       width: 50%;
       padding: 0 10px 10px 0;
       box-sizing: border-box;
   }
   .todosproj > div  img {
-    max-width: 100%; 
-    max-height: 100%;
+    object-fit: cover;
+    width: 100%;
+    height: 300px;
   }
 
   //proj 1
@@ -365,16 +470,26 @@ form label {
     margin:0;
   }
   
-  .cartazes img{
-    width: 33%;
+  .cartazes {
+    margin-top: 40px;
+    margin-bottom: 40px;
   }
 
+  .cartazes img{
+    width: 32%;
+  }
+
+  .video1 {
+    padding: 40px 40px;
+  }
+
+  .apresen {
+    margin-top: 40px;
+  }
   .apresen img {
     flex-wrap: wrap;
     justify-content: center;
-    width: 49.8%;
-    padding: 0;
-    margin: 0;
+    width: 49%;
   }
 }
 
