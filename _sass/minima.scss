@@ -114,49 +114,6 @@ $on-laptop:        800px !default;
   }
 }
 
-.circulo {
-  position: absolute;
-  margin-left: 50px;
-  top: 15px;
-  width: 30px;
-  height: 30px;
-  background: linear-gradient(#08f7fe,#fe53bb);
-  border-radius: 50%;
-  animation: animate 0.5s linear infinite;
-  z-index: 200;
-}
-
-@keyframes animate {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-
-.circulo span {
-  width: 100%;
-  height: 100%;
-  background: linear-gradient(#08f7fe,#fe53bb);
-  border-radius: 50%;
-}
-
-.circulo span:nth-child(1) {
-  filter: blur(5px);
-}
-
-.circulo span:nth-child(2) {
-  filter: blur(10px);
-}
-
-.circulo span:nth-child(3) {
-  filter: blur(20px);
-}
-
-.circulo span:nth-child(4) {
-  filter: blur(55px);
-}
 
 
 
@@ -371,10 +328,61 @@ form label {
 
 @media screen and (min-width: $on-palm) { //para maior q 600px ---------------------------
   
+.circulo {
+  position: fixed;
+  top: 15px;
+  width: 30px;
+  height: 30px;
+  background: linear-gradient(#08f7fe,#fe53bb);
+  border-radius: 50%;
+  animation: animate 0.5s linear infinite;
+  z-index: 200;
+}
+
+.bolinha {
+  margin-left: 5%;
+}
+
+@keyframes animate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.circulo span {
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(#08f7fe,#fe53bb);
+  border-radius: 50%;
+}
+
+.circulo span:nth-child(1) {
+  filter: blur(5px);
+}
+
+.circulo span:nth-child(2) {
+  filter: blur(10px);
+}
+
+.circulo span:nth-child(3) {
+  filter: blur(20px);
+}
+
+.circulo span:nth-child(4) {
+  filter: blur(55px);
+}
+
+
+
+
   .site-header {
     border-bottom: 1px solid $grey-color-light;
     min-height: $spacing-unit * 1.865;
     position: fixed;
+    padding-left: 0;
  
   }
 
@@ -383,7 +391,8 @@ form label {
     line-height: $base-line-height * $base-font-size * 2.25;
     letter-spacing: -1px;
     margin-bottom: 0;
-    margin-left: 5%;
+    margin-left: 2%;
+    padding-left:20px ;
 
     &,
     &:visited {
@@ -437,10 +446,8 @@ form label {
 
 
 @media screen and (min-width: 800px) {//para maior q 800px --------------
-  .site-title {
-    margin-left: 5%;
-  }
-
+  
+ 
   //proj 1
   
   .projeto1 {
@@ -499,6 +506,14 @@ form label {
 
 @media screen and (min-width: 1000px) {//para maior q 1000px --------------
   
+  .bolinha {
+    margin-left: 17%;
+  }
+  
+  .site-title {
+    margin-left: 2%;
+  }
+
   .introuis {
     padding-top: 100px;
   }
