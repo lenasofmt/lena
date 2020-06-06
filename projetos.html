@@ -6,7 +6,8 @@ layout: page
 <div class="todosproj">
     {%- for imagem in site.comets-%}<!-- liquid,dar todos os items da pasta do site data etc-->
         <!--criar um link com o item url e o item title consigo ter imagem como link-->
-        <div>
+        <div class="tuti">
+            <div class="overlay"></div>
             <a class="page-link" href="{{ site.baseurl }}/{{ imagem.link }}" title="Click to go to this project"><img src="{{ site.baseurl }}{{ imagem.image }}"/></a><br>
             <p class="tituloproj">{{imagem.title}}</p><!-- vai buscar titulo que defini-->
             <p class="descricaoproj">{{imagem.descricao}}</p><!-- vai buscar descricao do proj-->
