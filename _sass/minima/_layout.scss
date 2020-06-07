@@ -32,6 +32,10 @@
       font-weight: 800;
       color: $brand-color;
     }
+    &:hover {
+      color: #08f7fe;
+      text-decoration: none;
+    }
   }
   
   .site-nav {
@@ -190,8 +194,8 @@
    * Site footer
    */
   .site-footer {
-    
-    border-top: 1px solid $grey-color-light;
+    background-color: black;
+    border-top: 1px solid #09fbd3;
     padding: $spacing-unit 0;
   }
   
@@ -208,7 +212,7 @@
   
   .footer-col-wrapper {
     @include relative-font-size(0.9375);
-    color: $grey-color;
+    color: rgba(255,255,255,0.8);
     margin-left: -$spacing-unit / 2;
     @extend %clearfix;
   }

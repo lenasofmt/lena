@@ -112,7 +112,7 @@ a {
   }
 
   &:hover {
-    color: $text-color;
+    color: #09fbd3;
     text-decoration: underline;
   }
 
@@ -235,7 +235,7 @@ pre {
     width: 16px;
     height: 16px;
     display: inline-block;
-    fill: #{$grey-color};
+    fill:  rgba(255,255,255,0.8);
     padding-right: 5px;
     vertical-align: text-top;
 }
