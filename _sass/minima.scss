@@ -113,10 +113,16 @@ $on-laptop:        800px !default;
 .page-link img{
   width: 100%;
   -webkit-filter: invert(0);
+  -moz-filter: invert(0);
+  -ms-filter: invert(0);
+  filter: invert(0);
   transition-duration: 0.7s;
 
   &:hover{
     -webkit-filter: invert(1);
+    -ms-filter: invert(1);
+    -moz-filter: invert(1);
+    filter: invert(1);
     transition-duration: 0.7s;
   }
 }
